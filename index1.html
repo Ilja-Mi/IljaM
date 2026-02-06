@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scors</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        img {
+            cursor: pointer; 
+            width: 400px; 
+            transition: transform 0.1s;
+        }
+        img:active {
+            transform: scale(0.95); 
+        }
+        #counter {
+            font-size: 2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+ 
+    <h2>vajuta</h2>
+  
+    <img src="https://felixonline.co.uk/content/images/file/felixonline/img/upload/201401151610-me1711-games_cookie.png" id="clickImage" alt="clickImage">
+    
+    <div id="counter">0</div>
+ 
+    <script>
+       
+        let count = 0;
+ 
+        
+        const image = document.getElementById('clickImage');
+        const counterDisplay = document.getElementById('counter');
+ 
+        
+        image.addEventListener('click', function() {
+            count++; 
+            counterDisplay.innerText = count; 
+        });
+    </script>
+ 
+</body>
+</html>
